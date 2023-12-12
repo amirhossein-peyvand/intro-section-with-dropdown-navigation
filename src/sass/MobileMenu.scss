@@ -1,0 +1,42 @@
+@import "colors.scss";
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 20rem;
+  padding: 1.5rem 1.2rem 0;
+  position: absolute;
+  right: 0;
+  row-gap: 2rem;
+  top: 0;
+  width: 50%;
+
+  .logoContainer {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      cursor: pointer;
+      width: 2rem;
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.2rem;
+    font-size: 1.2rem;
+
+    .careers,
+    .about {
+      color: $medium-gray;
+      cursor: pointer;
+    }
+
+    .careers:hover,
+    .about:hover {
+      opacity: 0.8;
+    }
+  }
+}

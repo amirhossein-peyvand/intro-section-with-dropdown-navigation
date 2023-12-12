@@ -1,0 +1,41 @@
+@import "colors.scss";
+
+.features {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  span {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: $medium-gray;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    row-gap: 1.5rem;
+
+    li {
+      align-items: center;
+      color: $medium-gray;
+      column-gap: 1rem;
+      cursor: pointer;
+      display: flex;
+
+      img {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
+    li:hover {
+      span {
+        opacity: 0.8;
+      }
+    }
+  }
+}
