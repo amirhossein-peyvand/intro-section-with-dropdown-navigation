@@ -8,25 +8,24 @@
   padding: 1.5rem 1.2rem 0;
   position: absolute;
   right: 0;
-  row-gap: 2rem;
+  row-gap: 3rem;
   top: 0;
-  width: 50%;
+  width: 60%;
+  box-shadow: -250px 0 1px -1px rgba(0, 0, 0, 0.4);
+  z-index: -999;
 
   .logoContainer {
     display: flex;
-    justify-content: flex-end;
 
-    img {
-      cursor: pointer;
-      width: 2rem;
-    }
+    justify-content: flex-end;
   }
 
   .items {
     display: flex;
     flex-direction: column;
-    row-gap: 2.2rem;
     font-size: 1.2rem;
+    margin-top: 6rem;
+    row-gap: 2rem;
 
     .careers,
     .about {
@@ -37,6 +36,38 @@
     .careers:hover,
     .about:hover {
       opacity: 0.8;
+    }
+  }
+
+  .lastItems {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    text-align: center;
+    width: 100%;
+
+    .login,
+    button {
+      color: $medium-gray;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    .login:hover {
+      opacity: 0.8;
+    }
+
+    button {
+      background-color: transparent;
+      border: 2px solid $medium-gray;
+      border-radius: 13px;
+      padding: 1rem;
+      width: 100%;
+    }
+
+    button:hover {
+      border-color: $almost-black;
     }
   }
 }

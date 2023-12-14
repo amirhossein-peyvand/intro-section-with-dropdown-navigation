@@ -7,4 +7,12 @@
   margin: auto;
   padding: 1.5rem 1.2rem 0;
   min-width: 20rem;
+
+  .menuLogoContainer {
+    z-index: 999;
+
+    img {
+      cursor: pointer;
+    }
+  }
 }
