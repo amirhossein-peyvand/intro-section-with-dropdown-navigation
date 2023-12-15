@@ -1,14 +1,18 @@
-// import closeMenuLogo from "../assets/icon-close-menu.svg";
+import closeMenuLogo from "../assets/icon-close-menu.svg";
 import "../sass/MobileMenu.scss";
 import MobileMenuCompany from "./MobileMenuCompany";
 import MobileMenuFeatures from "./MobileMenuFeatures";
 
-const MobileMenu = () => {
+interface Props {
+  onSetClicked: () => void;
+}
+
+const MobileMenu = ({ onSetClicked }: Props) => {
   return (
     <aside className="mobileMenu">
-      {/* <section className="logoContainer">
-        <img src={closeMenuLogo} alt="closeMenuLogo" />
-      </section> */}
+      <section className="logoContainer">
+        <img src={closeMenuLogo} alt="closeMenuLogo" onClick={onSetClicked} />
+      </section>
       <ul className="items">
         <li>
           <MobileMenuFeatures />

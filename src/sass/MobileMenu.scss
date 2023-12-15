@@ -1,8 +1,10 @@
 @import "colors.scss";
 
 .mobileMenu {
+  box-shadow: -2px 0 20px 1px rgba(111, 111, 111, 0.2);
   display: flex;
   flex-direction: column;
+  max-width: 50%;
   min-height: 100vh;
   min-width: 20rem;
   padding: 1.5rem 1.2rem 0;
@@ -10,21 +12,25 @@
   right: 0;
   row-gap: 3rem;
   top: 0;
-  width: 60%;
-  box-shadow: -250px 0 1px -1px rgba(0, 0, 0, 0.4);
-  z-index: -999;
+  width: 50%;
+  z-index: 999;
 
   .logoContainer {
     display: flex;
 
     justify-content: flex-end;
+
+    img {
+      cursor: pointer;
+      width: 2rem;
+    }
   }
 
   .items {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
     row-gap: 2rem;
 
     .careers,
