@@ -3,7 +3,9 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 1rem 0;
+  max-width: 150rem;
+  padding: 1rem 1.2rem;
+  margin: auto;
 
   .menuLogoContainer {
     img {

@@ -1,0 +1,71 @@
+@import "colors.scss";
+
+.mainArea {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  row-gap: 2rem;
+
+  .heroImageContainer {
+    img {
+      width: 100%;
+    }
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    .titleDescBtn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      row-gap: 2rem;
+
+      .title {
+        font-size: 3rem;
+        color: $almost-black;
+      }
+
+      .desc {
+        color: $medium-gray;
+        font-size: 1.2rem;
+        max-width: 45rem;
+        line-height: 1.3;
+        margin: auto;
+        letter-spacing: 0.3px;
+        word-spacing: 0.5px;
+      }
+
+      .learnMoreBtn {
+        border: 1px solid $almost-black;
+        padding: 1rem 1.4rem;
+        border-radius: 10px;
+        background-color: $almost-black;
+        transition: all 0.3s;
+        color: $almost-white;
+        cursor: pointer;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+
+      .learnMoreBtn:hover {
+        background-color: $almost-white;
+        color: $almost-black;
+      }
+    }
+
+    .logos {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      column-gap: 0.5rem;
+
+      img {
+        width: 4.5rem;
+      }
+    }
+  }
+}
