@@ -1,0 +1,26 @@
+@import "colors.scss";
+
+.desktopNavItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  & > ul {
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+
+    .careers,
+    .about {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: $medium-gray;
+    }
+
+    .careers:hover,
+    .about:hover {
+      color: $almost-black;
+    }
+  }
+}

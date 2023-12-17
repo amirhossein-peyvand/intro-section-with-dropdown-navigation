@@ -1,0 +1,44 @@
+@import "colors.scss";
+
+.desktopCompany {
+  position: relative;
+
+  span {
+    align-items: center;
+    color: $medium-gray;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    img {
+      width: 1.1rem;
+    }
+  }
+
+  span:hover {
+    color: $almost-black;
+  }
+
+  ul {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 15px 1px rgb(210, 210, 210);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding: 1.8rem;
+    position: absolute;
+    row-gap: 1rem;
+    width: 12rem;
+
+    li {
+      color: $medium-gray;
+      cursor: pointer;
+    }
+
+    li:hover {
+      color: $almost-black;
+    }
+  }
+}
