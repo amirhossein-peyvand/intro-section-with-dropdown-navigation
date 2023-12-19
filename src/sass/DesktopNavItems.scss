@@ -1,9 +1,9 @@
 @import "colors.scss";
 
 .desktopNavItems {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
 
   & > ul {
@@ -20,6 +20,40 @@
 
     .careers:hover,
     .about:hover {
+      color: $almost-black;
+    }
+  }
+
+  & > div {
+    align-items: center;
+    column-gap: 2rem;
+    display: flex;
+
+    span {
+      color: $medium-gray;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    span:hover {
+      color: $almost-black;
+    }
+
+    .registerBtn {
+      background-color: transparent;
+      border-radius: 10px;
+      border: 2px solid $medium-gray;
+      color: $medium-gray;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      padding: 0.8rem 0;
+      width: 10rem;
+    }
+
+    .registerBtn:hover {
+      border-color: $almost-black;
       color: $almost-black;
     }
   }
